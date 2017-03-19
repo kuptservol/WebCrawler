@@ -1,0 +1,8 @@
+.gradle/
+gradle/
+.idea/
+build/
+*.iml
+mfmoderation.log
+logs
+content/
