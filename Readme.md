@@ -9,7 +9,7 @@
    Main loop waits for all async stages to complete.
    The main search work task to look is ru.skuptsov.robot.crawler.CrawlTask.
 
-<h5> Web pages word searching
+<h5> Web pages word searching </h5>
 
    While crawling pages a reverse word to pages index is build.
    So, finding a word in pages occurence is very fast - you need to look for a word in index,
@@ -18,7 +18,7 @@
         search index is partitioned into configurable number of batches - so to find
          a word in index you need to read only one file - O(N/n_backets)
 
-<h3> Run
+<h3> Run </h3>
 
 1. build
 
