@@ -1,7 +1,7 @@
 
-<h2> Description
+<h3> Description </h3> 
 
-<h4> Web pages crawling
+<h5> Web pages crawling
 
    Crawling is divided into 4 async stages -
    download page, parse, store on disk, update search index.
@@ -9,7 +9,7 @@
    Main loop waits for all async stages to complete.
    The main search work task to look is ru.skuptsov.robot.crawler.CrawlTask.
 
-<h4> Web pages word searching
+<h5> Web pages word searching
 
    While crawling pages a reverse word to pages index is build.
    So, finding a word in pages occurence is very fast - you need to look for a word in index,
@@ -18,14 +18,14 @@
         search index is partitioned into configurable number of batches - so to find
          a word in index you need to read only one file - O(N/n_backets)
 
-<h2> Run
+<h3> Run
 
-1. Build
+1. build
 
         ./gradlew build
-2.  Index
+2.  index
 
         java -jar ./robot-1.0.jar crawl --url https://en.wikipedia.org/wiki/Sherlock_Holmes --depth 2 {optional --config /config.properties}
-3. Search for a word
+3. search for a word
 
         java -jar ./robot-1.0.jar search --word Watson {optional --config /config.properties}
